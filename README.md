@@ -1,1 +1,3 @@
-# Node-JS-API-with-Docker-and-Redis-Server
+# Node-JS-API-with-Docker-and-Redis-Server : 
+
+ce code crée un serveur Express qui écoute sur un port spécifié et fournit un point de terminaison API pour récupérer les données utilisateur. Il utilise également le cache Redis pour stocker les données récupérées pendant une courte période afin de réduire la charge sur le serveur. Lorsqu'un utilisateur demande des données pour un nom d'utilisateur particulier, le serveur vérifie d'abord si les données sont présentes dans le cache Redis. Si c'est le cas, les données sont renvoyées directement du cache. Sinon, le serveur récupère les données d'une API distante, les stocke dans le cache Redis et les renvoie à l'utilisateur.
